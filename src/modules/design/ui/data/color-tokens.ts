@@ -61,6 +61,18 @@ export const lightSections: Section[] = [
       { name: 'brand-glow-soft', token: 'rgba(254,97,40,0.10)', value: 'rgba(254,97,40,0.10)', usage: 'Ambient top glow on panel' },
     ],
   },
+  {
+    title: 'Status',
+    cols: 3,
+    swatches: [
+      { name: 'success', token: '#3FA05A', value: '#3fa05a', usage: 'Ingested / done — text, icon, border' },
+      { name: 'danger', token: '#D6453A', value: '#d6453a', usage: 'Failed / error — text, icon, border' },
+      { name: 'warning', token: '#E0962A', value: '#e0962a', usage: 'Pending / processing — text, icon, border' },
+      { name: 'success-soft', token: 'rgba(63,160,90,0.15)', value: 'rgba(63,160,90,0.15)', usage: 'Success pill / badge background' },
+      { name: 'danger-soft', token: 'rgba(214,69,58,0.15)', value: 'rgba(214,69,58,0.15)', usage: 'Danger pill / badge background' },
+      { name: 'warning-soft', token: 'rgba(224,150,42,0.15)', value: 'rgba(224,150,42,0.15)', usage: 'Warning pill / badge background' },
+    ],
+  },
 ]
 
 export const darkSections: Section[] = [
@@ -111,6 +123,18 @@ export const darkSections: Section[] = [
       { name: 'brand-shadow', token: 'rgba(254,97,40,0.30)', value: 'rgba(254,97,40,0.30)', usage: 'Send button drop-shadow' },
       { name: 'brand-glow-strong', token: 'rgba(254,97,40,0.15)', value: 'rgba(254,97,40,0.15)', usage: 'Ambient panel gradients' },
       { name: 'brand-glow-soft', token: 'rgba(254,97,40,0.08)', value: 'rgba(254,97,40,0.08)', usage: 'Very subtle orange-tinted surface' },
+    ],
+  },
+  {
+    title: 'Status',
+    cols: 3,
+    swatches: [
+      { name: 'success', token: '#5EC27A', value: '#5ec27a', usage: 'Ingested / done — text, icon, border' },
+      { name: 'danger', token: '#F26157', value: '#f26157', usage: 'Failed / error — text, icon, border' },
+      { name: 'warning', token: '#F0AA3C', value: '#f0aa3c', usage: 'Pending / processing — text, icon, border' },
+      { name: 'success-soft', token: 'rgba(94,194,122,0.15)', value: 'rgba(94,194,122,0.15)', usage: 'Success pill / badge background' },
+      { name: 'danger-soft', token: 'rgba(242,97,87,0.15)', value: 'rgba(242,97,87,0.15)', usage: 'Danger pill / badge background' },
+      { name: 'warning-soft', token: 'rgba(240,170,60,0.15)', value: 'rgba(240,170,60,0.15)', usage: 'Warning pill / badge background' },
     ],
   },
 ]

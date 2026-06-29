@@ -8,7 +8,11 @@
    Light = :root, Dark = .dark. Mapped into Tailwind via @theme inline.
    ───────────────────────────────────────────────────────────── */
 
-:root {
+/* `.light` mirrors :root so a nested wrapper can force light even when an
+   ancestor (e.g. <html>) is .dark — CSS vars inherit, so the override must
+   be explicit. Used by the /design preview toggles. */
+:root,
+.light {
   /* Neutrals */
   --canvas: #faf6f2;
   --surface: #ede5dc;
@@ -35,6 +39,14 @@
   --divider: rgba(120, 80, 50, 0.15);
   --divider-faint: rgba(120, 80, 50, 0.08);
   --hover: rgba(120, 80, 50, 0.08);
+
+  /* Status — vivid semantics; solid = text/border/icon, soft = pill bg */
+  --success: #3fa05a;
+  --success-soft: rgba(63, 160, 90, 0.15);
+  --danger: #d6453a;
+  --danger-soft: rgba(214, 69, 58, 0.15);
+  --warning: #e0962a;
+  --warning-soft: rgba(224, 150, 42, 0.15);
 }
 
 .dark {
@@ -63,6 +75,14 @@
   --divider: rgba(245, 237, 228, 0.12);
   --divider-faint: rgba(245, 237, 228, 0.04);
   --hover: rgba(245, 237, 228, 0.07);
+
+  /* Status — lifted + vivid for contrast on the dark canvas */
+  --success: #5ec27a;
+  --success-soft: rgba(94, 194, 122, 0.15);
+  --danger: #f26157;
+  --danger-soft: rgba(242, 97, 87, 0.15);
+  --warning: #f0aa3c;
+  --warning-soft: rgba(240, 170, 60, 0.15);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -92,6 +112,13 @@
   --color-divider: var(--divider);
   --color-divider-faint: var(--divider-faint);
   --color-hover: var(--hover);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
 
   --font-display: 'Instrument Sans', sans-serif;
   --font-sans: 'Inter', sans-serif;
